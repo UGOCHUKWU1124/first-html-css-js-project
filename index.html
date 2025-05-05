@@ -7,12 +7,16 @@
     <title>Hugo Ecommerce Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+
 </head>
 
 <body>
     <section id="header">
+        <div id="bar">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
         <a href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
-
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
@@ -20,13 +24,14 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a id="navbar" href="profile.html"><i class="fa-regular fa-user"></i></a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
+            <a href="profile.html"><i class="fa-regular fa-user profile"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus cart"></i></a>
         </div>
     </section>
 
@@ -220,11 +225,10 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h4>$29.99</h4>
-                    <button onclick="openProductModal(event)" class="read-more"
-                        data-name="Cartoon Astronaut T-Shirts" data-brand="adidas" data-price="29.99"
-                        data-image="img/products/f7.jpg" data-smallimg1="img/products/f7.jpg"
-                        data-smallimg2="img/products/f6.jpg" data-smallimg3="img/products/f5.jpg"
-                        data-smallimg4="img/products/f4.jpg">
+                    <button onclick="openProductModal(event)" class="read-more" data-name="Cartoon Astronaut T-Shirts"
+                        data-brand="adidas" data-price="29.99" data-image="img/products/f7.jpg"
+                        data-smallimg1="img/products/f7.jpg" data-smallimg2="img/products/f6.jpg"
+                        data-smallimg3="img/products/f5.jpg" data-smallimg4="img/products/f4.jpg">
                         Read More
                     </button>
                 </div>
@@ -244,11 +248,10 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h4>$49.99</h4>
-                    <button onclick="openProductModal(event)" class="read-more"
-                        data-name="Cartoon Astronaut T-Shirts" data-brand="adidas" data-price="49.99"
-                        data-image="img/products/f8.jpg" data-smallimg1="img/products/f8.jpg"
-                        data-smallimg2="img/products/f7.jpg" data-smallimg3="img/products/f6.jpg"
-                        data-smallimg4="img/products/f5.jpg">
+                    <button onclick="openProductModal(event)" class="read-more" data-name="Cartoon Astronaut T-Shirts"
+                        data-brand="adidas" data-price="49.99" data-image="img/products/f8.jpg"
+                        data-smallimg1="img/products/f8.jpg" data-smallimg2="img/products/f7.jpg"
+                        data-smallimg3="img/products/f6.jpg" data-smallimg4="img/products/f5.jpg">
                         Read More
                     </button>
                 </div>
@@ -645,3 +648,17 @@
 </body>
 
 </html>
+
+
+
+
+
+<div class="search-bar-container">
+    <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search products, brands and categories" />
+    </div>
+    <!-- <div class="search-bar-btn">
+        <button class="normal">Search</button>
+    </div> -->
+</div>
